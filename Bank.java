@@ -1,15 +1,13 @@
 public class Bank{
 
-    public static void main(String[] args) { //starting point for java, must have. 
+    public static void main(String[] args) { 
         Account briansAccount = new Account("2211-3380-999999-0220", 10000.00, "Thanks for using our service Brian!");
 
         System.out.println(briansAccount.getBalance());
-
-        // new keyword always points to the constructor. first is the type and second is the instantiate. 
         Account bryansAccount = new Account("2211-8809-100000-1330", 10.00, "Thanks for using our service Bryan!");
-        System.out.println(bryansAccount.getBalance()); // getting
+        System.out.println(bryansAccount.getBalance());
 
-        bryansAccount.setCustomerName("Lilo"); // setting
+        bryansAccount.setCustomerName("Lilo"); 
         System.out.println(bryansAccount.getCustomerName());
 
         Account chrisAccount = new Account();
@@ -19,8 +17,6 @@ public class Bank{
 
 
         System.out.println(chrisAccount.getAccountNumber());
-
-        // Using the withdrawal method on our empty constructor. 
         chrisAccount.withdraw(200);
         chrisAccount.withdraw(9800);
         chrisAccount.withdraw(1);
@@ -29,5 +25,3 @@ public class Bank{
 
     }
     }
-// imperative  paradigm is where we write out literally everything like java
-//declarative is more like javascript where u can call things at the point you ever need it. 
